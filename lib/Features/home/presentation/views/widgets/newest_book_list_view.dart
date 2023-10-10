@@ -1,7 +1,7 @@
 import 'package:bookly_app/Features/home/presentation/manager/feature_newest_book_cubit/feature_newest_book_cubit.dart';
 import 'package:bookly_app/Features/home/presentation/views/widgets/newest_book_list_view_item.dart';
-import 'package:bookly_app/core/utils/widgets/custom_circular_progress_indicator.dart';
 import 'package:bookly_app/core/utils/widgets/custom_error_widget.dart';
+import 'package:bookly_app/core/utils/widgets/custom_shimmer_newest_books_loading.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -31,10 +31,7 @@ class NewestBookListView extends StatelessWidget {
                   child: CustomErrorWidget(errMessage: state.errMessage)));
         } else {
           return const SliverFillRemaining(
-            hasScrollBody: false,
-            child: Center(
-              child: CustomCircularProgressIndicator(),
-            ),
+            child: CustomShimmerNewestBooksLoadingIndicator(),
           );
         }
       },

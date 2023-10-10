@@ -1,6 +1,5 @@
 import 'package:bookly_app/Features/home/presentation/manager/similar_books/similar_books_cubit.dart';
 import 'package:bookly_app/Features/home/presentation/views/widgets/custom_book_image.dart';
-import 'package:bookly_app/core/utils/widgets/custom_circular_progress_indicator.dart';
 import 'package:bookly_app/core/utils/widgets/custom_error_widget.dart';
 import 'package:bookly_app/core/utils/widgets/custom_shimmer_books_loading.dart';
 import 'package:flutter/material.dart';

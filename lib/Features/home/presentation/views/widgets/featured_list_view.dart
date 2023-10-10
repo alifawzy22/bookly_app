@@ -43,7 +43,9 @@ class FeaturedListView extends StatelessWidget {
                 }),
           );
         } else {
-          return const CustomShimmerLoadingListBooks();
+          return const CustomShimmerLoadingListBooks(
+            count: 3,
+          );
           //const Center(child: CustomCircularProgressIndicator());
         }
       },

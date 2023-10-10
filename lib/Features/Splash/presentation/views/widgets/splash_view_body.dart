@@ -21,7 +21,7 @@ class SplashViewBody extends StatelessWidget {
         AnimatedTextKit(
           isRepeatingAnimation: false,
           onFinished: () {
-            GoRouter.of(context).push(AppRouter.kHomeView);
+            GoRouter.of(context).pushReplacement(AppRouter.kHomeView);
           },
           animatedTexts: [
             TypewriterAnimatedText(

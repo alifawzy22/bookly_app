@@ -14,7 +14,8 @@ class BooksListViewItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => GoRouter.of(context).push(AppRouter.kBookDetailsView),
+      onTap: () =>
+          GoRouter.of(context).push(AppRouter.kBookDetailsView, extra: book),
       child: Row(
         children: [
           SizedBox(

@@ -9,6 +9,7 @@ class CustomButton extends StatelessWidget {
   final double? bottomLeftRadius;
   final double? bottomRightRadius;
   final double? textVerticalPadding;
+  final void Function()? onPressed;
   const CustomButton({
     super.key,
     required this.backgroundColor,
@@ -19,6 +20,7 @@ class CustomButton extends StatelessWidget {
     this.bottomLeftRadius,
     this.bottomRightRadius,
     this.textVerticalPadding,
+    this.onPressed,
   });
 
   @override
@@ -37,7 +39,7 @@ class CustomButton extends StatelessWidget {
           ),
         ),
       ),
-      onPressed: () {},
+      onPressed: onPressed,
       child: Text(
         text,
         style: textStyle,
